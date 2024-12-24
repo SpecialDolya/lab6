@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yandex Music</title>
+</head>
+<body>
+    <h1>Top 100 Yandex Music</h1>
+    <table border="1">
+        <tr>
+            <th>name</th>
+            <th>genre</th>
+            <th>artists</th>
+            <th>chart</th>
+            <th>Explicit_content</th>
+            <th>monthly_listens_total</th>
+            <th>artists_likes_total</th>
+            <th>track_len_seconds</th>
+        </tr>
+        {% for music in musics %}
+        <tr>
+            <td>{{ music[0] }}</td>
+            <td>{{ music[1] }}</td>
+            <td>{{ music[2] }}</td>
+            <td>{{ music[3] }}</td>
+            <td>{{ music[4] }}</td>
+            <td>{{ music[5] }}</td>
+            <td>{{ music[6] }}</td>
+            <td>{{ music[7] }}</td>
+            <td>{{ music[8] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
